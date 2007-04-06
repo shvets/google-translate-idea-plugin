@@ -1,0 +1,29 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <name>google-translate</name>
+
+  <description>This plugin performs translations in Editor window from one language to another. It uses "translate.google.com" service behind the scene.</description>
+  <version>1.0.0</version>
+  <idea-version since-build="2000"/>
+
+  <project-components>
+    <component>
+      <implementation-class>org.google.code.translate.TranslateConfiguration</implementation-class>
+      <option name="workspace" value="true"/>
+    </component>
+  </project-components>
+
+  <actions>
+    <action id="translate.Translate" 
+            class="org.google.code.translate.TranslateAction"
+            text="Translate" description="Translate from one language to another"/>
+
+    <group id="translate.Translate.TranslateGroup" text="Translate" description="Translate">
+      <reference id="translate.Translate"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Generate"/>
+      <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateEquals"/>
+    </group>
+  </actions>
+
+</idea-plugin>
