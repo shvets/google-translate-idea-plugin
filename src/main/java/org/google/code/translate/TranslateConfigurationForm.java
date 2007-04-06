@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class TranslateConfigurationForm {
   private JPanel rootComponent;
 
-  private JComboBox comboBox;
+  private JComboBox comboBox = new JComboBox();
   private JLabel label;
 
   public TranslateConfigurationForm() {

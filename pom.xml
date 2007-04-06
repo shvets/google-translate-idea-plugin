@@ -112,10 +112,6 @@
             <phase>compile</phase>
             <configuration>
               <tasks>
-                <echo>
-                  ??????????************
-                </echo>
-
                 <copy file="${idea.home}/lib/jgoodies-forms.jar" todir="target/classes"/>
 
                 <unzip src="${idea.home}/lib/forms_rt.jar"
