@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.google.code</groupId>
+  <artifactId>google-translate-idea-plugin</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>google-translate-idea-plugin</name>
+  <description>Intellij IDEA plugin for google.translate.com.</description>
+
+  <url>http://code.google.com/p/google-translate-idea-plugin</url>
+  <inceptionYear>2007</inceptionYear>
+
+  <issueManagement>
+    <system>Google Code bugtracker</system>
+    <url>http://code.google.com/p/google-translate-idea-plugin/issues/list</url>
+  </issueManagement>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:https://google-translate-idea-plugin.googlecode.com/svn/trunk</connection>
+    <url>http://google-translate-idea-plugin.googlecode.com/svn</url>
+  </scm>
+
+  <organization>
+    <name>Dream Programs Inc.</name>
+    <url>http://sf.net/projects/scriptlandia/</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>shvets</id>
+      <name>Alexander Shvets</name>
+      <email>shvets_alexander@yahoo.com</email>
+      <organization></organization>
+      <roles>
+        <role>Founder</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <properties>
+    <idea.home>C:/Editors/IntelliJ IDEA 6.0.5</idea.home>
+  </properties>
+
+  <dependencies>
+     <dependency>
+       <groupId>com.intellij.idea</groupId>
+       <artifactId>openapi</artifactId>
+       <version>6.0.5</version>
+       <scope>system</scope>
+       <systemPath>${idea.home}/lib/openapi.jar</systemPath>
+    </dependency>
+
+     <dependency>
+       <groupId>com.intellij.idea</groupId>
+       <artifactId>extensions</artifactId>
+       <version>6.0.5</version>
+       <scope>system</scope>
+       <systemPath>${idea.home}/lib/extensions.jar</systemPath>
+    </dependency>
+
+     <dependency>
+       <groupId>com.intellij.idea</groupId>
+       <artifactId>jdom</artifactId>
+       <version>6.0.5</version>
+       <scope>system</scope>
+       <systemPath>${idea.home}/lib/jdom.jar</systemPath>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+
+    <defaultGoal>package</defaultGoal>
+    
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/src.xml</descriptor>
+           </descriptors>
+          <finalName>${project.build.finalName}</finalName>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>assembly</id>
+            <phase>compile</phase>
+            <configuration>
+              <tasks>
+                <echo>
+                  ??????????************
+                </echo>
+
+                <copy file="${idea.home}/lib/jgoodies-forms.jar" todir="target/classes"/>
+
+                <unzip src="${idea.home}/lib/forms_rt.jar"
+                    dest="target/classes" overwrite="false">
+                  <patternset>
+                    <include name="com/intellij/uiDesigner/core/*.*"/>
+                  </patternset>
+                </unzip>
+
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <site>
+      <id> Web site</id>
+      <url>http://code.google.com/p/google-translate-idea-plugin</url>
+    </site>
+  </distributionManagement>
+
+</project>
+
