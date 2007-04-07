@@ -40,15 +40,15 @@ public class TranslateAction extends EditorAction {
 
       String selectedText = selectionModel.getSelectedText();
 
-      EditorModificationUtil.deleteSelectedText(editor);
-
       try {
         String response = translateHelper.translate(selectedText, getLangPair(dataContext));
 
+        EditorModificationUtil.deleteSelectedText(editor);
+          
         EditorModificationUtil.insertStringAtCaret(editor, response);
       }
       catch (Exception e) {
-        ;
+        //e.printStackTrace();
       }
     }
 

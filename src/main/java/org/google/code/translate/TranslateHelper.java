@@ -136,7 +136,7 @@ public class TranslateHelper {
     String start = "<div id=result_box dir=ltr>";
     String end = "</div>";
 
-    request = request.replaceAll(" ", "%20");
+    request = preProcess(request);
 
     String url = hostURL + "/translate_t" + "?" + "langpair=" + langPair +
                 "&text=" + request;
@@ -179,10 +179,29 @@ public class TranslateHelper {
     }
 
     if (result != null) {
-      return result.trim();
+      return postProcess(result);
     }
 
     return request;
+  }
+
+  private String preProcess(String text) {
+    //text = text.replaceAll("\"", " ");
+    text = text.replaceAll("<", "%20");
+    text = text.replaceAll(">", "%20");
+    text = text.replaceAll(" ", "%20");
+    text = text.replaceAll("\n", "%20");
+    text = text.replaceAll("\r", "%20");
+
+    return text;
+  }
+
+  private String postProcess(String text) {
+    text = text.trim();
+
+    text = text.replaceAll("\\Q&quot;\\E", "\"");
+
+    return text;
   }
 
 }

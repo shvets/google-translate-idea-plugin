@@ -5,7 +5,7 @@
 
   <groupId>org.google.code</groupId>
   <artifactId>google-translate-idea-plugin</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>google-translate-idea-plugin</name>
@@ -49,7 +49,7 @@
   </developers>
 
   <properties>
-    <idea.home>C:/Editors/IntelliJ IDEA 6.0.5</idea.home>
+    <idea.home>d:/Editors/IntelliJ IDEA 6.0.4</idea.home>
   </properties>
 
   <dependencies>
@@ -102,34 +102,6 @@
           <finalName>${project.build.finalName}</finalName>
         </configuration>
       </plugin>
-
-      <plugin>
-        <artifactId>maven-antrun-plugin</artifactId>
-
-        <executions>
-          <execution>
-            <id>assembly</id>
-            <phase>compile</phase>
-            <configuration>
-              <tasks>
-                <copy file="${idea.home}/lib/jgoodies-forms.jar" todir="target/classes"/>
-
-                <unzip src="${idea.home}/lib/forms_rt.jar"
-                    dest="target/classes" overwrite="false">
-                  <patternset>
-                    <include name="com/intellij/uiDesigner/core/*.*"/>
-                  </patternset>
-                </unzip>
-
-              </tasks>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
     </plugins>
   </build>
 

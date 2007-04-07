@@ -6,15 +6,23 @@ import org.google.code.translate.TranslateConfiguration;
 import javax.swing.*;
 import java.util.List;
 import java.util.ArrayList;
+import java.awt.*;
 
 
 public class TranslateConfigurationForm {
   private JPanel rootComponent;
 
   private JComboBox comboBox = new JComboBox();
-  private JLabel label;
+  private JLabel label = new JLabel("Select translation:");
 
   public TranslateConfigurationForm() {
+    rootComponent = new JPanel();
+
+    rootComponent.setLayout(new FlowLayout());
+
+    rootComponent.add(label);
+    rootComponent.add(comboBox);      
+
     comboBox.removeAllItems();
     comboBox.setModel(createModel());
     comboBox.setRenderer(new LanguageEntryRenderer());
