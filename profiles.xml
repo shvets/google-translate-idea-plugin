@@ -1,0 +1,11 @@
+<profiles>
+  <profile>
+    <id>dev</id>
+    <properties>
+      <idea.home>c:/Editors/IntelliJ IDEA 6.0.5</idea.home>
+   </properties>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+  </profile>
+</profiles>

@@ -49,7 +49,7 @@
   </developers>
 
   <properties>
-    <idea.home>d:/Editors/IntelliJ IDEA 6.0.4</idea.home>
+    <idea.home>c:/Editors/IntelliJ IDEA 6.0.4</idea.home>
   </properties>
 
   <dependencies>
