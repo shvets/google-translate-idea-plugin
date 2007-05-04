@@ -1,10 +1,12 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
-<idea-plugin>
-  <name>google-translate</name>
 
-  <description>This plugin performs translations in Editor window from one language to another. It uses "translate.google.com" service behind the scene.</description>
+<idea-plugin>
+  <name>google-translate-idea-plugin</name>
+
+  <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
   <version>1.0.1</version>
   <idea-version since-build="2000"/>
+  <vendor>Alexander Shvets</vendor>
 
   <project-components>
     <component>
