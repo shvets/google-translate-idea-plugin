@@ -1,4 +1,4 @@
-    google-translate-idea-plugin ver. 1.0.0
+    google-translate-idea-plugin ver. 1.0.2
 
 This plugin performs translations in Editor window from one language to another. It uses "translate.google.com" service behind the scene.
 
@@ -12,7 +12,7 @@ and "to" languages.
     How to use
 
 1. Select the part to be translated;
-2. Select "Translate" item from popup menu;
+2. Select "Translate" item from the editor popup menu;
 3. "translate.google.com" web site will perform actual translation;
 4. Response from the service will be inserted in place of selection.
 

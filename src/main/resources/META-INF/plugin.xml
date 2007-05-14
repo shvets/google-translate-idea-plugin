@@ -1,12 +1,35 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
 
-<idea-plugin>
-  <name>google-translate-idea-plugin</name>
+<idea-plugin url="http://code.google.com/p/google-translate-idea-plugin">
+  <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version>1.0.1</version>
-  <idea-version since-build="2000"/>
+  <version>1.0.2</version>
+  <idea-version min="2000"/>
   <vendor>Alexander Shvets</vendor>
+
+  <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
+
+  <change-notes><![CDATA[
+    <p>This plugin performs translations in Editor window from one language to another. It uses
+       "translate.google.com" service behind the scene.</p>
+
+    <p>Plugin is especially convenient when you are trying to translate long i18n.property 
+    files in your project for different languages.</p>
+
+    <p>Plugin adds "Translate" item into popup menu for the editor (also, in "Code" menu and 
+    "Generate" group). It also have separate configuration screen for selecting "from"
+    and "to" languages.</p>
+
+    <p>How to use</p>
+
+    <ul>
+      <li>Select the part to be translated;</li>
+      <li>Select "Translate" item from the editor popup menu;</li>
+      <li>"translate.google.com" web site will perform actual translation;</li>
+      <li>Response from the service will be inserted in place of selection.</li>
+    </ul>
+  ]]></change-notes>
 
   <project-components>
     <component>
