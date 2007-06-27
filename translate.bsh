@@ -1,0 +1,61 @@
+// translate.bsh
+
+String textToTranslate = "fish";
+
+String fromLang = "en";
+String toLang = "ru";
+
+String hostURL = "http://translate.google.com";
+String start = "<div id=result_box dir=ltr>";
+String end = "</div>" ;
+
+String url = hostURL + "/translate_t" +
+             "?" + "langpair=" + fromLang + "|" + toLang +
+             "&text=" + textToTranslate;
+
+URLConnection urlConnection = new URL(url).openConnection();
+
+urlConnection.setRequestProperty("Accept", "*/*");
+urlConnection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Maxthon; .NET CLR 1.1.4322)");
+urlConnection.setRequestProperty("Pragma", "no-cache");
+
+String result = "";
+
+InputStream is = urlConnection.getInputStream();
+
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+while(true) {
+  int ch = is.read();
+
+  if(ch == -1) {
+    break;
+  }
+
+  baos.write(ch);
+}
+
+is.close();
+baos.close();
+
+String s = new String(baos.toByteArray(), "UTF-8");
+
+int index1 = s.indexOf(start);
+
+if(index1 != -1) {
+  String s2 = s.substring(index1 + start.length());
+
+  int index2 = s2.indexOf(end);
+
+  if(index2 != -1) {
+    result = s2.substring(0, index2);
+  }
+}
+
+FileOutputStream out = new FileOutputStream("out.txt");
+
+System.out.println("result: " + result);
+
+out.write(result.getBytes());
+
+out.close();
