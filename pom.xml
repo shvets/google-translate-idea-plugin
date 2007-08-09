@@ -5,7 +5,7 @@
 
   <groupId>org.google.code</groupId>
   <artifactId>google-translate-idea-plugin</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <packaging>jar</packaging>
 
   <name>google-translate-idea-plugin</name>
@@ -68,7 +68,7 @@
      <dependency>
        <groupId>com.intellij.idea</groupId>
        <artifactId>jdom</artifactId>
-       <version>6.0.5</version>
+       <version>7118</version>
        <scope>system</scope>
        <systemPath>${idea.home}/lib/jdom.jar</systemPath>
     </dependency>

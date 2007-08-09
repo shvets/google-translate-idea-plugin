@@ -32,6 +32,10 @@ public class TranslateHelper {
     HttpConfigurable httpConfigurable = (HttpConfigurable)
       ApplicationManager.getApplication().getComponent("HttpConfigurable");
 
+    if(httpConfigurable == null) {
+      httpConfigurable = HttpConfigurable.getInstance();
+    }
+
     if (httpConfigurable != null) {
       if (httpConfigurable.USE_HTTP_PROXY) {
         System.getProperties().put("proxySet", Boolean.valueOf(httpConfigurable.USE_HTTP_PROXY).toString());

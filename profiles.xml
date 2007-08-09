@@ -2,7 +2,7 @@
   <profile>
     <id>dev</id>
     <properties>
-      <idea.home>c:/Editors/IntelliJ IDEA 6.0.5</idea.home>
+      <idea.home>C:/Editors/IntelliJ IDEA 7118</idea.home>
    </properties>
     <activation>
       <activeByDefault>true</activeByDefault>
