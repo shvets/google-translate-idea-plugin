@@ -32,15 +32,15 @@ public class TranslateHelper {
     HttpConfigurable httpConfigurable = (HttpConfigurable)
       ApplicationManager.getApplication().getComponent("HttpConfigurable");
 
-    if(httpConfigurable == null) {
-      httpConfigurable = HttpConfigurable.getInstance();
-    }
-
     if (httpConfigurable != null) {
       if (httpConfigurable.USE_HTTP_PROXY) {
         System.getProperties().put("proxySet", Boolean.valueOf(httpConfigurable.USE_HTTP_PROXY).toString());
         System.getProperties().put("proxyPort", Integer.toString(httpConfigurable.PROXY_PORT));
         System.getProperties().put("proxyHost", httpConfigurable.PROXY_HOST);
+
+        System.getProperties().put("http.proxySet", Boolean.valueOf(httpConfigurable.USE_HTTP_PROXY).toString());
+        System.getProperties().put("http.proxyPort", Integer.toString(httpConfigurable.PROXY_PORT));
+        System.getProperties().put("http.proxyHost", httpConfigurable.PROXY_HOST);
       }
     }
 
@@ -128,6 +128,20 @@ public class TranslateHelper {
     urlConnection.setRequestProperty("Accept", "*/*");
     urlConnection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Maxthon; .NET CLR 1.1.4322)");
     urlConnection.setRequestProperty("Pragma", "no-cache");
+
+    HttpConfigurable httpConfigurable = (HttpConfigurable)
+      ApplicationManager.getApplication().getComponent("HttpConfigurable");
+
+    if (httpConfigurable != null) {
+      if (httpConfigurable.PROXY_AUTHENTICATION) {
+        // proxy user and pass
+        urlConnection.setRequestProperty(
+          "Proxy-Authorization", 
+          "Basic " + new sun.misc.BASE64Encoder().encode((httpConfigurable.PROXY_LOGIN + ":" + 
+                                                          httpConfigurable.getPlainProxyPassword()).getBytes()
+        ));
+      }
+    }
 
     return urlConnection;
   }
