@@ -1,16 +1,16 @@
 package org.google.code.translate;
 
-import com.intellij.openapi.options.ConfigurationException;
-import com.intellij.openapi.options.Configurable;
-import com.intellij.openapi.util.DefaultJDOMExternalizer;
-import com.intellij.openapi.util.WriteExternalException;
-import com.intellij.openapi.util.InvalidDataException;
-import com.intellij.openapi.util.JDOMExternalizable;
+import com.intellij.codeInsight.intention.IntentionManager;
 import com.intellij.openapi.components.ProjectComponent;
+import com.intellij.openapi.options.Configurable;
+import com.intellij.openapi.options.ConfigurationException;
+import com.intellij.openapi.util.InvalidDataException;
+import com.intellij.openapi.util.WriteExternalException;
+import com.intellij.util.xmlb.XmlSerializer;
+import org.jdom.Element;
+import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
-
-import org.jdom.Element;
 
 /**
  * This class represents configuration component for translate action.
@@ -19,7 +19,7 @@ import org.jdom.Element;
  * @version 1.0 04/07/2007
  */
 public class TranslateConfiguration
-       implements ProjectComponent, Configurable, JDOMExternalizable {
+          implements ProjectComponent, Configurable {
   private final String COMPONENT_NAME = "Translate.Configuration";
 //  private final ImageIcon CONFIG_ICON =
 //          helper.getIcon("resources/icon.png", getClass());
@@ -41,11 +41,13 @@ public class TranslateConfiguration
   }
 
   public void projectOpened() {
+    IntentionManager.getInstance().addAction(new TranslateIntentionAction());
   }
 
   public void projectClosed() {
   }
 
+  @NotNull
   public String getComponentName() {
     return COMPONENT_NAME;
   }
@@ -105,11 +107,13 @@ public class TranslateConfiguration
   }
 
   public void readExternal(Element element) throws InvalidDataException {
-    DefaultJDOMExternalizer.readExternal(this, element);
+   // DefaultJDOMExternalizer.readExternal(this, element);
+    XmlSerializer.deserialize(element, TranslateConfiguration.class);
   }
 
   public void writeExternal(Element element) throws WriteExternalException {
-    DefaultJDOMExternalizer.writeExternal(this, element);
+    //DefaultJDOMExternalizer.writeExternal(this, element);
+    XmlSerializer.serialize(element);
   }
 
 }

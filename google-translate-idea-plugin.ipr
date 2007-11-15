@@ -6,16 +6,36 @@
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
   </component>
-  <component name="CheckStyle-IDEA">
-    <checkstyle-config />
-  </component>
   <component name="CodeStyleProjectProfileManger">
     <option name="PROJECT_PROFILE" />
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
   </component>
   <component name="CodeStyleSettingsManager">
-    <option name="PER_PROJECT_SETTINGS" />
-    <option name="USE_PER_PROJECT_SETTINGS" value="false" />
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <option name="JAVA_INDENT_OPTIONS">
+          <value>
+            <option name="INDENT_SIZE" value="2" />
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="false" />
+            <option name="SMART_TABS" value="false" />
+            <option name="LABEL_INDENT_SIZE" value="0" />
+            <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+          </value>
+        </option>
+        <ADDITIONAL_INDENT_OPTIONS fileType="js">
+          <option name="INDENT_SIZE" value="4" />
+          <option name="CONTINUATION_INDENT_SIZE" value="8" />
+          <option name="TAB_SIZE" value="4" />
+          <option name="USE_TAB_CHARACTER" value="false" />
+          <option name="SMART_TABS" value="false" />
+          <option name="LABEL_INDENT_SIZE" value="0" />
+          <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+        </ADDITIONAL_INDENT_OPTIONS>
+      </value>
+    </option>
+    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
   </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
@@ -56,16 +76,10 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
-  <component name="EmbeddedBrowser.BrowserComponent" show="false" xPos="424" yPos="538" width="600" height="200" />
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="ExportToHTMLSettings">
-    <option name="PRINT_LINE_NUMBERS" value="false" />
-    <option name="OPEN_IN_BROWSER" value="false" />
-    <option name="OUTPUT_DIRECTORY" />
-  </component>
-  <component name="IdProvider" IDEtalkID="04289D65787AD213693AA04DBC608AC9" />
+  <component name="IdProvider" IDEtalkID="53E06B611878531B6ACFFFD19600133C" />
   <component name="InspectionProjectProfileManager">
     <option name="PROJECT_PROFILE" value="Project Default" />
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
@@ -74,15 +88,9 @@
       <profile version="1.0" is_locked="false">
         <option name="myName" value="Project Default" />
         <option name="myLocal" value="false" />
-        <inspection_tool class="AntDuplicateTargetsInspection" level="ERROR" enabled="false" />
       </profile>
     </profiles>
     <list size="0" />
-  </component>
-  <component name="IntelliCalc">
-    <mode value="0" />
-    <system value="10" />
-    <angles value="deg" />
   </component>
   <component name="JavacSettings">
     <option name="DEBUGGING_INFO" value="true" />
@@ -115,46 +123,6 @@
     <option name="GENERATE_NO_WARNINGS" value="false" />
     <option name="IS_EMACS_ERRORS_MODE" value="true" />
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
-  </component>
-  <component name="LogConsolePreferences">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenBuildProjectComponent">
-    <option name="mavenExecutable" value="" />
-    <option name="Settings File" value="C:\Documents and Settings\shvetsa\.m2\settings.xml" />
-    <option name="mavenCommandLineParams" value="" />
-    <option name="vmOptions" value="" />
-    <option name="useMavenEmbedder" value="false" />
-    <option name="useFilter" value="false" />
-    <option name="Batch Mode" value="false" />
-    <option name="Check Plugin Updates" value="false" />
-    <option name="Debug" value="false" />
-    <option name="Errors" value="false" />
-    <option name="Fail At End" value="false" />
-    <option name="Fail Fast" value="false" />
-    <option name="Fail Never" value="false" />
-    <option name="Lax Checksums" value="false" />
-    <option name="No Plugin Registry" value="false" />
-    <option name="No Plugin Updates" value="false" />
-    <option name="Non Recursive" value="false" />
-    <option name="Offline" value="false" />
-    <option name="Reactor" value="false" />
-    <option name="Strict Checksums" value="false" />
-    <option name="Update Plugins" value="false" />
-    <option name="Update Snapshots" value="false" />
-    <option name="Skip Tests" value="false" />
-    <pom-list>
-      <pom>
-        <option name="path" value="$PROJECT_DIR$/pom.xml" />
-        <plugin-list />
-      </pom>
-    </pom-list>
-  </component>
-  <component name="MavenPluginConfiguration">
-    <repositoryUrl url="http://ibiblio.com/maven2" />
   </component>
   <component name="Palette2">
     <group name="Swing">
@@ -283,8 +251,8 @@
       <module fileurl="file://$PROJECT_DIR$/google-translate-idea-plugin.iml" filepath="$PROJECT_DIR$/google-translate-idea-plugin.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="false" project-jdk-name="IDEA 7118" project-jdk-type="IDEA JDK">
-    <output url="file://$PROJECT_DIR$/target/classes" />
+  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA 7549" project-jdk-type="IDEA JDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="RUBY_DOC_SETTINGS">
     <RUBY_DOC NAME="DEFAULTS" VALUE="TRUE" />
@@ -305,41 +273,8 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="" vcs="svn" />
   </component>
-  <component name="com.intellij.jsf.UserDefinedFacesConfigs">
-    <option name="USER_DEFINED_CONFIGS">
-      <value>
-        <list size="0" />
-      </value>
-    </option>
-  </component>
-  <component name="ideadoc.IdeaDocConfigurationGUI">
-    <doccer class="nl.piraya.ideadoc.doccer.DoccerForOverridingMethod" enabled="true">
-      <template>/**$s${@inheritDoc}$s$*/</template>
-    </doccer>
-    <doccer class="nl.piraya.ideadoc.doccer.DoccerForGetter" enabled="true">
-      <template>/**$n$$s$*$s$Getter$s$for$s$property$s$'${PROPERTY_NAME}'.$n$$s$*$n$$s$*$s$@return$s$Value$s$for$s$property$s$'${PROPERTY_NAME}'.$n$$s$*/</template>
-    </doccer>
-    <doccer class="nl.piraya.ideadoc.doccer.DoccerForSetter" enabled="true">
-      <template>/**$n$$s$*$s$Setter$s$for$s$property$s$'${PROPERTY_NAME}'.$n$$s$*$n$$s$*$s$@param$s$${PARAM_NAME}$s$Value$s$to$s$set$s$for$s$property$s$'${PROPERTY_NAME}'.$n$$s$*/</template>
-    </doccer>
-    <doccer class="nl.piraya.ideadoc.doccer.DoccerForDefaultConstructor" enabled="true">
-      <template>/**$s$Constructs$s$a$s$new$s$${CLASS_NAME}.$s$*/</template>
-    </doccer>
-    <doccer class="nl.piraya.ideadoc.doccer.DoccerForPrivateDefaultConstructor" enabled="true">
-      <template>/**$s$Do$s$not$s$instantiate$s$${CLASS_NAME}.$s$*/</template>
-    </doccer>
-  </component>
-  <component name="org.intellij.doctree.ProjectDocs">
-    <Documents>
-      <dir name="Project" root="true" />
-    </Documents>
-  </component>
-  <component name="uidesigner-configuration">
-    <option name="INSTRUMENT_CLASSES" value="true" />
-    <option name="COPY_FORMS_RUNTIME_TO_OUTPUT" value="true" />
-    <option name="DEFAULT_LAYOUT_MANAGER" value="GridBagLayout" />
-  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
 </project>
 

@@ -1,6 +1,9 @@
 package org.google.code.translate;
 
 import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.actionSystem.DataContext;
+import com.intellij.openapi.actionSystem.DataConstants;
+import com.intellij.openapi.project.Project;
 import com.intellij.util.net.HttpConfigurable;
 
 import java.io.ByteArrayOutputStream;
@@ -21,7 +24,7 @@ import java.util.List;
 public class TranslateHelper {
   private static String hostURL = "http://code.google.com";
 
-  private static List pairs = new ArrayList();
+  private static List<KeyValuePair> pairs = new ArrayList<KeyValuePair>();
 
   /**
    * Creates new translate helper.
@@ -30,7 +33,7 @@ public class TranslateHelper {
    */
   public TranslateHelper() throws Exception {
     HttpConfigurable httpConfigurable = (HttpConfigurable)
-      ApplicationManager.getApplication().getComponent("HttpConfigurable");
+        ApplicationManager.getApplication().getComponent("HttpConfigurable");
 
     if (httpConfigurable != null) {
       if (httpConfigurable.USE_HTTP_PROXY) {
@@ -44,7 +47,7 @@ public class TranslateHelper {
       }
     }
 
-    if(pairs.size() == 0) {
+    if (pairs.size() == 0) {
       prepareLangPairs();
     }
   }
@@ -111,7 +114,7 @@ public class TranslateHelper {
         int index3 = s2.substring(1).indexOf("\"");
         int index4 = s2.indexOf(">");
 
-        String key = s2.substring(1, index3+1);
+        String key = s2.substring(1, index3 + 1);
         String value = s2.substring(index4 + 1);
 
         pairs.add(new KeyValuePair(key, value));
@@ -122,7 +125,7 @@ public class TranslateHelper {
   }
 
   private URLConnection prepareURLConnection(String url)
-    throws IOException {
+      throws IOException {
     URLConnection urlConnection = new URL(url).openConnection();
 
     urlConnection.setRequestProperty("Accept", "*/*");
@@ -130,16 +133,16 @@ public class TranslateHelper {
     urlConnection.setRequestProperty("Pragma", "no-cache");
 
     HttpConfigurable httpConfigurable = (HttpConfigurable)
-      ApplicationManager.getApplication().getComponent("HttpConfigurable");
+        ApplicationManager.getApplication().getComponent("HttpConfigurable");
 
     if (httpConfigurable != null) {
       if (httpConfigurable.PROXY_AUTHENTICATION) {
         // proxy user and pass
         urlConnection.setRequestProperty(
-          "Proxy-Authorization", 
-          "Basic " + new sun.misc.BASE64Encoder().encode((httpConfigurable.PROXY_LOGIN + ":" + 
-                                                          httpConfigurable.getPlainProxyPassword()).getBytes()
-        ));
+            "Proxy-Authorization",
+            "Basic " + new sun.misc.BASE64Encoder().encode((httpConfigurable.PROXY_LOGIN + ":" +
+                httpConfigurable.getPlainProxyPassword()).getBytes()
+            ));
       }
     }
 
@@ -157,7 +160,7 @@ public class TranslateHelper {
     request = preProcess(request);
 
     String url = hostURL + "/translate_t" + "?" + "langpair=" + langPair +
-                "&text=" + request;
+        "&text=" + request;
 
     TranslateHelper translateHelper = new TranslateHelper();
 
@@ -220,6 +223,18 @@ public class TranslateHelper {
     text = text.replaceAll("\\Q&quot;\\E", "\"");
 
     return text;
+  }
+
+  public String getLangPair(Project project) {
+    String langPair = "en|en";
+
+    if (project != null) {
+      TranslateConfiguration configuration = project.getComponent(TranslateConfiguration.class);
+
+      langPair = configuration.getLangPair();
+    }
+
+    return langPair;
   }
 
 }

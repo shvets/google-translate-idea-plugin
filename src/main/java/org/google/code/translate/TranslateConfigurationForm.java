@@ -1,14 +1,17 @@
 package org.google.code.translate;
 
-import org.google.code.translate.LanguageEntryRenderer;
-import org.google.code.translate.TranslateConfiguration;
-
 import javax.swing.*;
 import java.util.List;
 import java.util.ArrayList;
 import java.awt.*;
 
 
+/**
+ * This class represents form object for propagating changes in the configuration.
+ *
+ * @author Alexander Shvets
+ * @version 1.0 11/17/2007
+ */
 public class TranslateConfigurationForm {
   private JPanel rootComponent;
 

@@ -1,7 +1,7 @@
 package org.google.code.translate;
 
-import com.intellij.openapi.actionSystem.DataContext;
 import com.intellij.openapi.actionSystem.DataConstants;
+import com.intellij.openapi.actionSystem.DataContext;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.EditorModificationUtil;
 import com.intellij.openapi.editor.SelectionModel;
@@ -41,7 +41,10 @@ public class TranslateAction extends EditorAction {
       String selectedText = selectionModel.getSelectedText();
 
       try {
-        String response = translateHelper.translate(selectedText, getLangPair(dataContext));
+
+        Project project = (Project)dataContext.getData(DataConstants.PROJECT);
+
+        String response = translateHelper.translate(selectedText, translateHelper.getLangPair(project));
 
         EditorModificationUtil.deleteSelectedText(editor);
           
@@ -51,21 +54,7 @@ public class TranslateAction extends EditorAction {
         //e.printStackTrace();
       }
     }
-
-    private String getLangPair(DataContext dataContext) {
-      String langPair = "en|en";
-
-      Project project = (Project)dataContext.getData(DataConstants.PROJECT);
-
-      if (project != null) {
-        TranslateConfiguration configuration =
-            (TranslateConfiguration) project.getComponent(TranslateConfiguration.class);
-
-        langPair = configuration.getLangPair();
-      }
-
-      return langPair;
-    }
   }
 
 }
+

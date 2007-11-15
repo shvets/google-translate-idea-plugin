@@ -4,10 +4,9 @@
   <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <idea-version min="2000"/>
 
-  <vendor>Alexander Shvets</vendor>
   <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
 
   <change-notes><![CDATA[
@@ -31,7 +30,7 @@
     </ul>
 
     Changes:
-     1. Fixed issue that plugin did not work with the latest IDEA version. 
+     1. Added Translation Preview feature. 
   ]]></change-notes>
 
   <project-components>
@@ -44,14 +43,24 @@
   <actions>
     <action id="translate.Translate" 
             class="org.google.code.translate.TranslateAction"
-            text="Translate" description="Translate from one language to another"/>
-
-    <group id="translate.Translate.TranslateGroup" text="Translate" description="Translate">
+            text="Translate" description="Translate from one language to another">
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Generate"/>
+      <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateEquals"/>
+    </action>
+<!--
+     <action id="org.google.code.translate.TranslateIntentionAction" class="org.google.code.translate.TranslateIntentionAction"
+            text="Translate Popup Action" description="Translate Popup Action">
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="AddAntBuildFile"/>
+    </action>
+-->
+ <!--   <group id="translate.Translate.TranslateGroup" text="Translate" description="Translate">
       <reference id="translate.Translate"/>
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Generate"/>
       <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
       <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateEquals"/>
     </group>
+    -->
   </actions>
 
 </idea-plugin>
