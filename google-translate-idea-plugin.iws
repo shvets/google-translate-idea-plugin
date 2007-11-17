@@ -19,18 +19,9 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java" />
-      <change type="MOVED" beforePath="C:\Work\Projects\IDEA-projects\google-translate-idea-plugin\src\main\java\org\google\code\translate\TranslateIntentionAction.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails.txt" afterPath="$PROJECT_DIR$/mails.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/LanguageEntryRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/LanguageEntryRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.iws" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/KeyValuePair.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/KeyValuePair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java" />
     </list>
     <ignored path="google-translate-idea-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,58 +87,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TranslateConfiguration.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="81" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.2872228">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TranslateConfigurationForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.017951425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyValuePair.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/KeyValuePair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.017951425">
-              <folding>
-                <marker date="1195314078390" expanded="true" signature="222:313" placeholder="/**...*/" />
-                <marker date="1195314078390" expanded="true" signature="1025:1053" placeholder="/**...*/" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanguageEntryRenderer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/LanguageEntryRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.19746569">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TranslateAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="714" selection-end="714" vertical-scroll-proportion="0.16473073">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TranslateHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="568" selection-end="568" vertical-scroll-proportion="0.017951425">
+            <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.019668737">
               <folding />
             </state>
           </provider>
@@ -156,7 +99,7 @@
       <file leaf-file-name="TranslatePreviewIntentionAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="218" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.018240344">
+            <state line="24" column="13" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-0.51449275">
               <folding />
             </state>
           </provider>
@@ -171,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TranslatePopupView.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TranslatePopupView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="69" selection-start="758" selection-end="758" vertical-scroll-proportion="0.39493138">
+            <state line="28" column="50" selection-start="838" selection-end="838" vertical-scroll-proportion="0.43271223">
               <folding />
             </state>
           </provider>
@@ -498,34 +441,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Plugin.translate-plugin">
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -537,6 +452,18 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="google-translate-idea-plugin" />
@@ -571,17 +498,33 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method>
+        <option name="Make" value="true" />
+      </method>
     </configuration>
     <configuration default="false" name="translate-plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="google-translate-idea-plugin" />
@@ -657,41 +600,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="10" width="1900" height="1160" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1162" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
+      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798395" order="1" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6128385" order="3" />
+      <window_info id="DBHelper" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" order="8" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43731195" order="3" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="12" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="13" />
+      <window_info id="FileBrowser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898697" order="14" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24850787" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24812031" order="0" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="15" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="16" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798395" order="2" />
-      <window_info id="DBHelper" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" order="8" />
+      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="17" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
       <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4150841" order="5" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
-      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
-      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" order="8" />
-      <window_info id="FileBrowser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="4" />
-      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="17" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -753,34 +696,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/components/Storage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="783" selection-end="783" vertical-scroll-proportion="0.21044303">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/components/StorageScheme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="731" selection-end="746" vertical-scroll-proportion="0.27056962">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/components/impl/stores/StateStorageManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/components/impl/stores/StateStorageManagerImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/editor/actionSystem/EditorActionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="22" selection-start="921" selection-end="921" vertical-scroll-proportion="0.30944625">
@@ -802,47 +717,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.017951425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/KeyValuePair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.017951425">
+        <state line="48" column="227" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.96202534">
           <folding>
-            <marker date="1195314078390" expanded="true" signature="222:313" placeholder="/**...*/" />
-            <marker date="1195314078390" expanded="true" signature="1025:1053" placeholder="/**...*/" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/LanguageEntryRenderer.java">
+    <entry file="jar://C:/Java/jdk1.6.0/src.zip!/java/awt/Font.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.19746569">
+        <state line="202" column="13" selection-start="9412" selection-end="9412" vertical-scroll-proportion="3.2869198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/editor/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="7" selection-start="5008" selection-end="5008" vertical-scroll-proportion="0.33267328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/editor/EditorModificationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="20" selection-start="4343" selection-end="4343" vertical-scroll-proportion="0.33267328">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="714" selection-end="714" vertical-scroll-proportion="0.16473073">
+        <state line="52" column="38" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.6712871">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/ui/popup/JBPopupFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="568" selection-end="568" vertical-scroll-proportion="0.017951425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="218" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.018240344">
+        <state line="177" column="40" selection-start="7899" selection-end="7899" vertical-scroll-proportion="0.7742574">
           <folding />
         </state>
       </provider>
@@ -854,16 +768,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="69" selection-start="758" selection-end="758" vertical-scroll-proportion="0.39493138">
+        <state line="153" column="16" selection-start="4364" selection-end="4364" vertical-scroll-proportion="1.9311663">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/LanguageEntryRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="81" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.2872228">
+        <state line="12" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.39961758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/KeyValuePair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.03632887">
+          <folding>
+            <marker date="1195314078390" expanded="true" signature="222:313" placeholder="/**...*/" />
+            <marker date="1195314078390" expanded="true" signature="1025:1053" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.019668737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-0.51449275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="50" selection-start="838" selection-end="838" vertical-scroll-proportion="0.43271223">
           <folding />
         </state>
       </provider>

@@ -8,6 +8,7 @@ import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.editor.actionSystem.EditorAction;
 import com.intellij.openapi.editor.actionSystem.EditorActionHandler;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.ui.popup.JBPopup;
 import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.psi.PsiFile;
@@ -75,8 +76,8 @@ public class TranslatePreviewIntentionAction extends EditorAction implements Int
      return false;
    }
 
-  private static void showPopup(Project project, Editor editor, String searchText) {
-    TranslatePopupView popupView = new TranslatePopupView(project, searchText);
+  private static void showPopup(Project project, Editor editor, String text) {
+    TranslatePopupView popupView = new TranslatePopupView(project, editor, text);
 
     JBPopup jbPopup = JBPopupFactory.getInstance()
         .createComponentPopupBuilder(popupView.mainPanel, popupView.mainPanel)

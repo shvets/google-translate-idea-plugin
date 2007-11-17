@@ -1,7 +1,9 @@
 package org.google.code.translate;
 
 import com.intellij.openapi.diagnostic.Logger;
+import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,7 +20,7 @@ public class TranslatePopupView {
   private JTextPane textPane = new JTextPane();
   public JPanel mainPanel = new JPanel();
 
-  public TranslatePopupView(Project project, String searchText) {
+  public TranslatePopupView(Project project, Editor editor, String searchText) {
     mainPanel.add(textPane);
 
     try {
@@ -26,9 +28,19 @@ public class TranslatePopupView {
 
       String translatedText = translateHelper.translate(searchText, TranslateHelper.getLangPair(project));
 
-      textPane.setText(translatedText);
+    Messages.showMessageDialog(
+                        translatedText,
+                        translatedText ,
+                        Messages.getInformationIcon()
+                    );      
+       Font font = editor.getComponent().getFont();
+
+      mainPanel.setFont(font);
+      textPane.setFont(font);
 
       textPane.setBackground(Color.WHITE);
+
+      textPane.setText(translatedText);
     }
     catch (Exception e) {
       logger.error(e.getMessage());
