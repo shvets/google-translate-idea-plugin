@@ -17,10 +17,7 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.iws" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.iws" />
-    </list>
+    <list default="true" name="Default" comment="" />
     <ignored path="google-translate-idea-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
