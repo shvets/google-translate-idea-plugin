@@ -18,10 +18,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.iws" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java" />
     </list>
     <ignored path="google-translate-idea-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +115,7 @@
       <file leaf-file-name="TranslatePopupView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="50" selection-start="838" selection-end="838" vertical-scroll-proportion="0.43271223">
+            <state line="23" column="194" selection-start="712" selection-end="712" vertical-scroll-proportion="0.33436853">
               <folding />
             </state>
           </provider>
@@ -808,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="50" selection-start="838" selection-end="838" vertical-scroll-proportion="0.43271223">
+        <state line="23" column="194" selection-start="712" selection-end="712" vertical-scroll-proportion="0.33436853">
           <folding />
         </state>
       </provider>
