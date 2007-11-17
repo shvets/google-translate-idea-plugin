@@ -34,3 +34,28 @@ Update: it works now with the latest version of Intellij IDEA 7 (Selena; build 7
 -- 
 Alexander Shvets
 shvets_alexander@yahoo.com
+
+
+[ANN] Google-Translate Plug-in version 1.0.5
+
+Google-Translate Plug-in version 1.0.5 is available for download
+using IDEA's internal Plugin Manager or directly from the IDEA plug-ins
+website at http://plugins.intellij.net/plugin/?id=1460.
+
+Update:
+
+1. Added Translation Preview feature. Select the text for preview and then intention icon will appear. Or press
+  "Alt-Enter" key combination to force the intention. Another way is to click on "Translation Preview" item
+   in editor pop-up.
+2. Removed deprecated code.
+
+How to use it in side IDEA editor:
+
+1. In editor select the part to be translated;
+2. Select "Translate" item from the editor popup menu;
+3. (hidden) "translate.google.com" web site (service) will perform actual translation;
+4. Response from the service will be inserted in place of your selection.
+
+-- 
+Alexander Shvets
+shvets_alexander@yahoo.com 

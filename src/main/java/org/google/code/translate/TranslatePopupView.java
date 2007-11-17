@@ -1,5 +1,6 @@
 package org.google.code.translate;
 
+import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.project.Project;
 
 import javax.swing.*;
@@ -12,23 +13,26 @@ import java.awt.*;
  * @version 1.0 11/17/2007
  */
 public class TranslatePopupView {
-    private JTextPane textPane = new JTextPane();
-    public JPanel mainPanel = new JPanel();
+  private static final Logger logger = Logger.getInstance(TranslatePopupView.class.getName());
 
-    public TranslatePopupView(Project project, String searchText) {
-      mainPanel.add(textPane);
-      
-        try {
-            TranslateHelper translateHelper = new TranslateHelper();
+  private JTextPane textPane = new JTextPane();
+  public JPanel mainPanel = new JPanel();
 
-            String translatedText = translateHelper.translate(searchText, translateHelper.getLangPair(project));
+  public TranslatePopupView(Project project, String searchText) {
+    mainPanel.add(textPane);
 
-            textPane.setText(translatedText);
+    try {
+      TranslateHelper translateHelper = new TranslateHelper();
 
-            textPane.setBackground(Color.WHITE);
-        }
-        catch (Exception e) {
-            textPane.setText(e.getMessage());
-        }
+      String translatedText = translateHelper.translate(searchText, TranslateHelper.getLangPair(project));
+
+      textPane.setText(translatedText);
+
+      textPane.setBackground(Color.WHITE);
     }
+    catch (Exception e) {
+      logger.error(e.getMessage());
+      textPane.setText(e.getMessage());
+    }
+  }
 }

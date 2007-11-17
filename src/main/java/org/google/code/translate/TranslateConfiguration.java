@@ -1,13 +1,10 @@
 package org.google.code.translate;
 
 import com.intellij.codeInsight.intention.IntentionManager;
-import com.intellij.openapi.components.ProjectComponent;
+import com.intellij.openapi.components.*;
 import com.intellij.openapi.options.Configurable;
 import com.intellij.openapi.options.ConfigurationException;
-import com.intellij.openapi.util.InvalidDataException;
-import com.intellij.openapi.util.WriteExternalException;
-import com.intellij.util.xmlb.XmlSerializer;
-import org.jdom.Element;
+import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -18,11 +15,23 @@ import javax.swing.*;
  * @author Alexander Shvets
  * @version 1.0 04/07/2007
  */
-public class TranslateConfiguration
-          implements ProjectComponent, Configurable {
-  private final String COMPONENT_NAME = "Translate.Configuration";
+@State(
+    name = TranslateConfiguration.COMPONENT_NAME,
+    storages = {@Storage(id = "translate", file = "$PROJECT_FILE$")}
+)
+public final class TranslateConfiguration
+    implements ProjectComponent, Configurable, PersistentStateComponent<TranslateConfiguration> {
+  public static final String COMPONENT_NAME = "Translate.Configuration";
 //  private final ImageIcon CONFIG_ICON =
 //          helper.getIcon("resources/icon.png", getClass());
+
+  public static final String CONFIGURATION_LOCATION;
+  //+"/.IntelliJIdea70/config/inspection";
+
+  static {
+    CONFIGURATION_LOCATION = System.getProperty("user.home");
+    //+"/.IntelliJIdea70/config/inspection";
+  }
 
   private TranslateConfigurationForm form;
 
@@ -41,7 +50,7 @@ public class TranslateConfiguration
   }
 
   public void projectOpened() {
-    IntentionManager.getInstance().addAction(new TranslateIntentionAction());
+    IntentionManager.getInstance().addAction(new TranslatePreviewIntentionAction());
   }
 
   public void projectClosed() {
@@ -86,7 +95,7 @@ public class TranslateConfiguration
    */
   public void apply() throws ConfigurationException {
     if (form != null) {
-      form.getData(this);
+      form.save(this);
     }
   }
 
@@ -95,7 +104,7 @@ public class TranslateConfiguration
    */
   public void reset() {
     if (form != null) {
-      form.setData(this);
+      form.load(this);
     }
   }
 
@@ -106,14 +115,12 @@ public class TranslateConfiguration
     form = null;
   }
 
-  public void readExternal(Element element) throws InvalidDataException {
-   // DefaultJDOMExternalizer.readExternal(this, element);
-    XmlSerializer.deserialize(element, TranslateConfiguration.class);
+  public TranslateConfiguration getState() {
+    return this;
   }
 
-  public void writeExternal(Element element) throws WriteExternalException {
-    //DefaultJDOMExternalizer.writeExternal(this, element);
-    XmlSerializer.serialize(element);
+  public void loadState(TranslateConfiguration state) {
+    XmlSerializerUtil.copyBean(state, this);
   }
 
 }

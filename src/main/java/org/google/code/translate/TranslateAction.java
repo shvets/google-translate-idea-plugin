@@ -1,13 +1,14 @@
 package org.google.code.translate;
 
-import com.intellij.openapi.actionSystem.DataConstants;
 import com.intellij.openapi.actionSystem.DataContext;
+import com.intellij.openapi.actionSystem.DataKeys;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.EditorModificationUtil;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.editor.actionSystem.EditorAction;
 import com.intellij.openapi.editor.actionSystem.EditorWriteActionHandler;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.diagnostic.Logger;
 
 /**
  * This class represents IDEA acrion that preform translation. It will appear in
@@ -17,6 +18,8 @@ import com.intellij.openapi.project.Project;
  * @version 1.0 04/07/2007
  */
 public class TranslateAction extends EditorAction {
+  private static final Logger logger = Logger.getInstance(TranslateAction.class.getName());
+
   private static TranslateHelper translateHelper;
 
   /**
@@ -41,17 +44,16 @@ public class TranslateAction extends EditorAction {
       String selectedText = selectionModel.getSelectedText();
 
       try {
+        Project project = DataKeys.PROJECT.getData(dataContext);
 
-        Project project = (Project)dataContext.getData(DataConstants.PROJECT);
-
-        String response = translateHelper.translate(selectedText, translateHelper.getLangPair(project));
+        String response = translateHelper.translate(selectedText, TranslateHelper.getLangPair(project));
 
         EditorModificationUtil.deleteSelectedText(editor);
-          
+
         EditorModificationUtil.insertStringAtCaret(editor, response);
       }
       catch (Exception e) {
-        //e.printStackTrace();
+        logger.error(e.getMessage());
       }
     }
   }

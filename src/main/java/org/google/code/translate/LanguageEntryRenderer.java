@@ -10,7 +10,7 @@ import java.awt.*;
  * @author Alexander Shvets
  * @version 1.0 04/07/2007
  */
-public class LanguageEntryRenderer extends JLabel implements ListCellRenderer  {
+public class LanguageEntryRenderer extends JLabel implements ListCellRenderer {
 
   /**
    * Creates new list renderer
@@ -24,22 +24,21 @@ public class LanguageEntryRenderer extends JLabel implements ListCellRenderer  {
    * specified value. Contains main logic for the renderer,
    */
   public Component getListCellRendererComponent(JList listbox, Object value,
-                      int index, boolean isSelected, boolean cellHasFocus) {
-    KeyValuePair pair = (KeyValuePair)value;
+                                                int index, boolean isSelected, boolean cellHasFocus) {
+    KeyValuePair pair = (KeyValuePair) value;
 
-    if(pair != null) {
+    if (pair != null) {
       this.setText(pair.getValue());
     }
 
-    if(isSelected) {
+    if (isSelected) {
       this.setBackground(UIManager.getColor("ComboBox.selectionBackground"));
       this.setForeground(UIManager.getColor("ComboBox.selectionForeground"));
-    }
-    else {
+    } else {
       this.setBackground(UIManager.getColor("ComboBox.background"));
       this.setForeground(UIManager.getColor("ComboBox.foreground"));
     }
-    
+
     return this;
   }
 

@@ -1,8 +1,6 @@
 package org.google.code.translate;
 
 import com.intellij.openapi.application.ApplicationManager;
-import com.intellij.openapi.actionSystem.DataContext;
-import com.intellij.openapi.actionSystem.DataConstants;
 import com.intellij.openapi.project.Project;
 import com.intellij.util.net.HttpConfigurable;
 
@@ -225,7 +223,7 @@ public class TranslateHelper {
     return text;
   }
 
-  public String getLangPair(Project project) {
+  public static String getLangPair(Project project) {
     String langPair = "en|en";
 
     if (project != null) {

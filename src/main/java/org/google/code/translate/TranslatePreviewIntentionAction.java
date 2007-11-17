@@ -1,8 +1,12 @@
 package org.google.code.translate;
 
 import com.intellij.codeInsight.intention.IntentionAction;
+import com.intellij.openapi.actionSystem.DataContext;
+import com.intellij.openapi.actionSystem.DataKeys;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
+import com.intellij.openapi.editor.actionSystem.EditorAction;
+import com.intellij.openapi.editor.actionSystem.EditorActionHandler;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.popup.JBPopup;
 import com.intellij.openapi.ui.popup.JBPopupFactory;
@@ -12,14 +16,34 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * This class represents IDEA intention acrion that preform translation preview. It will appear after selection has been done
- *  in the editor or by pressing "Alt-Enter" key combination.
+ * in the editor or by pressing "Alt-Enter" key combination.
  *
  * @author Alexander Shvets
  * @version 1.0 11/17/2007
  */
-public class TranslateIntentionAction implements IntentionAction {
+public class TranslatePreviewIntentionAction extends EditorAction implements IntentionAction {
 
-  public TranslateIntentionAction() {}
+  public TranslatePreviewIntentionAction() {
+    super(new TranslatePreviewHandler());
+  }
+
+  private static class TranslatePreviewHandler extends EditorActionHandler {
+
+    public void execute(Editor editor, DataContext dataContext) {
+      String searchText = null;
+
+      SelectionModel selection = editor.getSelectionModel();
+      if (selection.hasSelection()) {
+        searchText = selection.getSelectedText();
+      }
+
+      if (searchText != null && searchText.trim().length() > 0) {
+        Project project = DataKeys.PROJECT.getData(dataContext);
+
+        showPopup(project, editor, searchText);
+      }
+    }
+  }
 
   @NotNull
   public String getText() {
@@ -28,7 +52,7 @@ public class TranslateIntentionAction implements IntentionAction {
 
   @NotNull
   public String getFamilyName() {
-    return "popup";
+    return "Google Translate";
   }
 
   public boolean isAvailable(@NotNull Project project, Editor editor, PsiFile file) {
@@ -47,7 +71,11 @@ public class TranslateIntentionAction implements IntentionAction {
     showPopup(project, editor, searchText);
   }
 
-  private void showPopup(Project project, Editor editor, String searchText) {
+  public boolean startInWriteAction() {
+     return false;
+   }
+
+  private static void showPopup(Project project, Editor editor, String searchText) {
     TranslatePopupView popupView = new TranslatePopupView(project, searchText);
 
     JBPopup jbPopup = JBPopupFactory.getInstance()
@@ -60,10 +88,6 @@ public class TranslateIntentionAction implements IntentionAction {
         .createPopup();
 
     jbPopup.showInBestPositionFor(editor);
-  }
-
-  public boolean startInWriteAction() {
-    return false;
   }
 
 }

@@ -12,7 +12,8 @@ public class KeyValuePair {
 
   /**
    * Creates new pair.
-   * @param key the key
+   *
+   * @param key   the key
    * @param value the value
    */
   public KeyValuePair(String key, String value) {
@@ -56,7 +57,9 @@ public class KeyValuePair {
     this.value = value;
   }
 
-  /** {@inheritDoc} */
+  /**
+   * {@inheritDoc}
+   */
   public String toString() {
     return "KeyValuePair (" + key + ", " + value + ")";
   }

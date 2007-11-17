@@ -4,8 +4,8 @@
   <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version>1.0.4</version>
-  <idea-version min="2000"/>
+  <version>1.0.5</version>
+  <!--idea-version min="2000"/-->
 
   <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
 
@@ -30,7 +30,10 @@
     </ul>
 
     Changes:
-     1. Added Translation Preview feature. 
+     1. Added Translation Preview feature. Select the text for preview and then intention icon will appear. Or press
+       "Alt-Enter" key combination to force the intention. Another way is to click on "Translation Preview" item
+        in editor pop-up.
+     2. Removed deprecated code.
   ]]></change-notes>
 
   <project-components>
@@ -48,12 +51,12 @@
       <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
       <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateEquals"/>
     </action>
-<!--
-     <action id="org.google.code.translate.TranslateIntentionAction" class="org.google.code.translate.TranslateIntentionAction"
-            text="Translate Popup Action" description="Translate Popup Action">
-      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="AddAntBuildFile"/>
+
+     <action id="org.google.code.translate.TranslatePreviewIntentionAction" class="org.google.code.translate.TranslatePreviewIntentionAction"
+            text="Translation Preview" description="Translation Preview">
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="translate.Translate"/>
     </action>
--->
+
  <!--   <group id="translate.Translate.TranslateGroup" text="Translate" description="Translate">
       <reference id="translate.Translate"/>
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Generate"/>
