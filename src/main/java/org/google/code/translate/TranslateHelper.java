@@ -21,6 +21,9 @@ import java.util.List;
  */
 public class TranslateHelper {
   private static String hostURL = "http://code.google.com";
+  private static String START_SEQ_L2R = "<div id=result_box dir=ltr>";
+  private static String START_SEQ_R2L = "<div id=result_box dir=rtl>";
+
 
   private static List<KeyValuePair> pairs = new ArrayList<KeyValuePair>();
 
@@ -152,7 +155,6 @@ public class TranslateHelper {
   }
 
   public String translate(String request, String langPair) throws Exception {
-    String start = "<div id=result_box dir=ltr>";
     String end = "</div>";
 
     request = preProcess(request);
@@ -164,7 +166,7 @@ public class TranslateHelper {
 
     URLConnection urlConnection = translateHelper.prepareURLConnection(url);
 
-    String result = "";
+    String result = null;
 
     InputStream is = urlConnection.getInputStream();
 
@@ -185,7 +187,15 @@ public class TranslateHelper {
 
     String s = new String(baos.toByteArray(), "UTF-8");
 
+    String start = START_SEQ_L2R;
+
     int index1 = s.indexOf(start);
+
+    if (index1 == -1) {
+      start = START_SEQ_R2L;
+      
+      index1 = s.indexOf(start);
+    }
 
     if (index1 != -1) {
       String s2 = s.substring(index1 + start.length());

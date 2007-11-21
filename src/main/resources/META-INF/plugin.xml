@@ -4,7 +4,7 @@
   <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version>1.0.5</version>
+  <version>1.0.6</version>
   <idea-version min="2000"/>
 
   <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
@@ -30,10 +30,36 @@
     </ul>
 
     Changes:
-     1. Added Translation Preview feature. Select the text for preview and then intention icon will appear. Or press
-       "Alt-Enter" key combination to force the intention. Another way is to click on "Translation Preview" item
-        in editor pop-up.
-     2. Removed deprecated code.
+
+      <ul>
+              <li>1.0.6
+              <ol>
+                  <li>Fixed bug for Arabic language.</li>
+              </ol>
+          </li>
+
+            <li>1.0.5
+              <ol>
+                  <li>Added Translation Preview feature. Select the text for preview and then intention icon will appear. Or press
+  "Alt-Enter" key combination to force the intention. Another way is to click on "Translation Preview" item
+   in editor pop-up.
+                   </li>
+                  <li>Removed deprecated code.</li>
+              </ol>
+          </li>
+
+           <li>1.0.3
+              <ol>
+                  <li>it works now with the latest version of Intellij IDEA 7 (Selena; build 7118)..</li>
+              </ol>
+          </li>
+
+          <li>1.0.0
+              <ol>
+                  <li>Initial Release.</li>
+              </ol>
+          </li>
+      </ul>
   ]]></change-notes>
 
   <project-components>

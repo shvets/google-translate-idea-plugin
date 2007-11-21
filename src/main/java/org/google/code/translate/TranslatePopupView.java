@@ -9,7 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * This class represents panel for displaying pop-up window.
+ * This class represents panel for displaying pop-up .
  *
  * @author Alexander Shvets
  * @version 1.0 11/17/2007
@@ -27,13 +27,15 @@ public class TranslatePopupView {
       TranslateHelper translateHelper = new TranslateHelper();
 
       String translatedText = translateHelper.translate(searchText, TranslateHelper.getLangPair(project));
-
-    Messages.showMessageDialog(
-                        translatedText,
-                        translatedText ,
-                        Messages.getInformationIcon()
-                    );      
-       Font font = editor.getComponent().getFont();
+  /*
+      Messages.showMessageDialog(
+          translatedText,
+          translatedText,
+          Messages.getInformationIcon()
+      );
+      */
+      
+      Font font = editor.getComponent().getFont();
 
       mainPanel.setFont(font);
       textPane.setFont(font);

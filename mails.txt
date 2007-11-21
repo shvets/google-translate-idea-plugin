@@ -36,9 +36,9 @@ Alexander Shvets
 shvets_alexander@yahoo.com
 
 
-[ANN] Google-Translate Plug-in version 1.0.5
+[ANN] Google-Translate Plug-in version 1.0.6
 
-Google-Translate Plug-in version 1.0.5 is available for download
+Google-Translate Plug-in version 1.0.6 is available for download
 using IDEA's internal Plugin Manager or directly from the IDEA plug-ins
 website at http://plugins.intellij.net/plugin/?id=1460.
 

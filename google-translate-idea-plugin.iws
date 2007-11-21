@@ -18,13 +18,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mails.txt" afterPath="$PROJECT_DIR$/mails.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" afterPath="$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.iws" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="google-translate-idea-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CheckStyle.Configuration">
+    <configFile name="configFile" value="null\plugins\checkstyleplugin\sun_checks.xml" />
+  </component>
   <component name="Commander">
     <leftPanel />
     <rightPanel />
@@ -38,6 +46,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java" line="26" class="org.google.code.translate.TranslatePopupView" package="org.google.code.translate">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -88,7 +111,7 @@
       <file leaf-file-name="TranslateConfigurationForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.026984127">
+            <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.030944625">
               <folding />
             </state>
           </provider>
@@ -97,25 +120,73 @@
       <file leaf-file-name="TranslatePreviewIntentionAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.026984127">
+            <state line="24" column="13" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.030944625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="40" column="64" selection-start="1570" selection-end="1570" vertical-scroll-proportion="-1.0121528">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TranslatePopupView.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="aaa.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aaa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="16" selection-start="340" selection-end="340" vertical-scroll-proportion="0.34397164">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="HtmlPreview">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mails.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mails.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="33" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.34201956">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="11" selection-start="175" selection-end="175" vertical-scroll-proportion="0.2250423">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TranslatePopupView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="142" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.78253967">
+            <state line="36" column="222" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.89250815">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TranslateAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.89250815">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TranslateHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="191" column="12" selection-start="5281" selection-end="5281" vertical-scroll-proportion="0.28338763">
               <folding />
             </state>
           </provider>
@@ -132,6 +203,63 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="SORT_ALPHABETICALLY" value="false" />
     <option name="HIDE_CLASSES_WHERE_METHOD_NOT_IMPLEMENTED" value="false" />
+  </component>
+  <component name="IntelliJadProjectConfigComponent">
+    <config>
+      <a type="boolean">false</a>
+      <af type="boolean">false</af>
+      <always-exclude-recursively type="boolean">false</always-exclude-recursively>
+      <b type="boolean">false</b>
+      <clear type="boolean">false</clear>
+      <clear-and-close-console-on-success type="boolean">false</clear-and-close-console-on-success>
+      <create-output-directory type="boolean">false</create-output-directory>
+      <d type="string" />
+      <dead type="boolean">false</dead>
+      <decompile-on-navigation type="string">Always</decompile-on-navigation>
+      <decompile-to-memory type="boolean">true</decompile-to-memory>
+      <dis type="boolean">false</dis>
+      <exclusion-table-model type="table-model" model-class="net.stevechaloner.intellijad.config.ExclusionTableModel" content-types="string,boolean,boolean" />
+      <f type="boolean">false</f>
+      <ff type="boolean">false</ff>
+      <i type="boolean">false</i>
+      <indentation type="integer">4</indentation>
+      <jad-path type="string" />
+      <l type="integer">64</l>
+      <lnc type="boolean">false</lnc>
+      <lradix type="integer">10</lradix>
+      <nl type="boolean">false</nl>
+      <nocast type="boolean">false</nocast>
+      <noclass type="boolean">false</noclass>
+      <nocode type="boolean">false</nocode>
+      <noconv type="boolean">false</noconv>
+      <noctor type="boolean">false</noctor>
+      <nodos type="boolean">false</nodos>
+      <nofd type="boolean">false</nofd>
+      <noinner type="boolean">false</noinner>
+      <nolvt type="boolean">false</nolvt>
+      <nonlb type="boolean">false</nonlb>
+      <o type="boolean">false</o>
+      <pa type="string" />
+      <pc type="string">_cls</pc>
+      <pe type="string">_ex</pe>
+      <pf type="string">_fld</pf>
+      <pl type="string">_lcl</pl>
+      <pm type="string">_mth</pm>
+      <pp type="string">_prm</pp>
+      <pv type="integer">3</pv>
+      <r type="boolean">false</r>
+      <radix type="integer">10</radix>
+      <read-only type="boolean">false</read-only>
+      <reformat-style type="string">Preferred-Style</reformat-style>
+      <s type="string">java</s>
+      <safe type="boolean">false</safe>
+      <sort type="boolean">false</sort>
+      <space type="boolean">false</space>
+      <stat type="boolean">false</stat>
+      <t type="boolean">false</t>
+      <use-project-specific-settings type="boolean">false</use-project-specific-settings>
+      <v type="boolean">false</v>
+    </config>
   </component>
   <component name="MavenBuilder">
     <option name="jreName" value="#JAVA_INTERNAL" />
@@ -415,7 +543,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="0.5" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="0.5" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -443,6 +571,86 @@
     </key>
   </component>
   <component name="RunManager" selected="Plugin.translate-plugin">
+    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="buildParameters">
@@ -482,90 +690,10 @@
         </option>
       </MavenSettings>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="google-translate-idea-plugin" />
       <option name="VM_PARAMETERS" value=" -Xms32m -Xmx192m -XX:MaxPermSize=120m -ea -agentlib:yjpagent=sessionname=IntelliJIDEA" />
       <option name="PROGRAM_PARAMETERS" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method>
-        <option name="Make" value="true" />
-      </method>
     </configuration>
     <configuration default="false" name="translate-plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="google-translate-idea-plugin" />
@@ -641,43 +769,45 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="-8" width="1899" height="1160" extended-state="0" />
-    <editor active="false" />
+    <frame x="74" y="0" width="1843" height="1162" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
-      <window_info id="Archetypes" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.330076" order="5" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798395" order="1" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43731195" order="3" />
+      <window_info id="DBHelper" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" order="8" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="12" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="13" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898697" order="14" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Maven Build Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931727" order="8" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4538545" order="5" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="6" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24796528" order="0" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="15" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
-      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="16" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24705882" order="0" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32798395" order="2" />
-      <window_info id="DBHelper" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" order="8" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32698095" order="8" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32798395" order="1" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43731195" order="3" />
+      <window_info id="FileBrowser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898697" order="14" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="6" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="15" />
+      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="16" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
+      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="17" />
+      <window_info id="Maven Build Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931727" order="8" />
+      <window_info id="Archetypes" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.330076" order="5" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998997" order="8" />
-      <window_info id="FileBrowser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="CafeBabe" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953313" order="3" />
       <window_info id="Archetypes.Toolwindow" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298969" order="6" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="4" />
-      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="17" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -739,27 +869,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/editor/actionSystem/EditorActionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="921" selection-end="921" vertical-scroll-proportion="0.30944625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/codeInsight/intention/IntentionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="207" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.39413682">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/ui/popup/ComponentPopupBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="24" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.33224756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="227" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.96202534">
@@ -790,23 +899,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="38" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.6712871">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/src/src_openapi.zip!/com/intellij/openapi/ui/popup/JBPopupFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="177" column="40" selection-start="7899" selection-end="7899" vertical-scroll-proportion="0.7742574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="16" selection-start="4364" selection-end="4364" vertical-scroll-proportion="1.9311663">
           <folding />
         </state>
       </provider>
@@ -830,28 +925,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateConfigurationForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.026984127">
+        <state line="14" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.030944625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePreviewIntentionAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.026984127">
+        <state line="24" column="13" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.030944625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="46" column="0" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.89250815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslateHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="12" selection-start="5281" selection-end="5281" vertical-scroll-proportion="0.28338763">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/google/code/translate/TranslatePopupView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="142" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.78253967">
+        <state line="36" column="222" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.89250815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aaa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="340" selection-end="340" vertical-scroll-proportion="0.34397164">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="HtmlPreview">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mails.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="33" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.34201956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="175" selection-end="175" vertical-scroll-proportion="0.2250423">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="64" selection-start="1570" selection-end="1570" vertical-scroll-proportion="-1.0121528">
           <folding />
         </state>
       </provider>
