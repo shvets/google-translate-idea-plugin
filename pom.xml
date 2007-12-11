@@ -5,7 +5,7 @@
 
   <groupId>org.google.code</groupId>
   <artifactId>google-translate-idea-plugin</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
   <packaging>jar</packaging>
 
   <name>google-translate-idea-plugin</name>
@@ -49,18 +49,18 @@
   </developers>
 
   <dependencies>
-     <dependency>
-       <groupId>com.intellij.idea</groupId>
-       <artifactId>openapi</artifactId>
-       <version>7.0.1</version>
-       <scope>system</scope>
-       <systemPath>${idea.home}/lib/openapi.jar</systemPath>
+    <dependency>
+      <groupId>com.intellij.idea</groupId>
+      <artifactId>openapi</artifactId>
+      <version>${idea.version}</version>
+      <scope>system</scope>
+      <systemPath>${idea.home}/lib/openapi.jar</systemPath>
     </dependency>
 
     <dependency>
       <groupId>com.intellij.idea</groupId>
       <artifactId>annotations</artifactId>
-      <version>7.0.1</version>
+      <version>${idea.version}</version>
       <scope>system</scope>
       <systemPath>${idea.home}/lib/annotations.jar</systemPath>
     </dependency>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>com.intellij.idea</groupId>
       <artifactId>extensions</artifactId>
-      <version>7.0.1</version>
+      <version>${idea.version}</version>
       <scope>system</scope>
       <systemPath>${idea.home}/lib/extensions.jar</systemPath>
     </dependency>
@@ -76,7 +76,7 @@
     <dependency>
       <groupId>com.intellij.idea</groupId>
       <artifactId>jdom</artifactId>
-      <version>7.0.1</version>
+      <version>${idea.version}</version>
       <scope>system</scope>
       <systemPath>${idea.home}/lib/jdom.jar</systemPath>
     </dependency>
@@ -92,8 +92,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.5</source>
+          <target>1.5</target>
         </configuration>
       </plugin>
 

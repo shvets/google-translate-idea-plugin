@@ -4,14 +4,14 @@
     <defaultAnt bundledAnt="true" />
   </component>
   <component name="Archetypes.Configuration">
-    <option name="archetypesFileLocation" value="C:\Editors\IntelliJ IDEA 7549\examples" />
-    <option name="repositoryHome" value="C:\Editors\IntelliJ IDEA 7549\bin" />
-  </component>
-  <component name="Archetypes.ToolWindow">
-    <option name="projectRootPath" value="C:\temp" />
+    <option name="archetypesFileLocation" value="archetypes.xml" />
+    <option name="workingDirectory" value="C:\temp" />
   </component>
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="CafeBabe.Configuration">
+    <option name="lastSelectedFile" value="$PROJECT_DIR$/out/production/google-translate-idea-plugin/org/google/code/translate/TranslateConfiguration.class" />
   </component>
   <component name="CodeStyleProjectProfileManger">
     <option name="PROJECT_PROFILE" />
@@ -62,6 +62,103 @@
       <entry name="?*.dtd" />
       <entry name="?*.tld" />
     </wildcardResourcePatterns>
+  </component>
+  <component name="DBNavigator.Project.CodeCompletionManager">
+    <basic-setup>
+      <schemas type="SCHEMA" selected="true" />
+      <users type="USER" selected="true" />
+      <build-in-functions type="FUNCTION" selected="false" />
+      <user-schema>
+        <object type="TABLE" selected="true" />
+        <object type="INDEX" selected="true" />
+        <object type="VIEW" selected="true" />
+        <object type="SYNONYM" selected="true" />
+        <object type="SEQUENCE" selected="true" />
+        <object type="PROCEDURE" selected="true" />
+        <object type="FUNCTION" selected="true" />
+        <object type="PACKAGE" selected="true" />
+        <object type="TYPE" selected="true" />
+        <object type="DIMENSION" selected="true" />
+        <object type="CLUSTER" selected="true" />
+      </user-schema>
+      <public-schema>
+        <object type="TABLE" selected="false" />
+        <object type="INDEX" selected="false" />
+        <object type="VIEW" selected="false" />
+        <object type="SYNONYM" selected="false" />
+        <object type="SEQUENCE" selected="false" />
+        <object type="PROCEDURE" selected="false" />
+        <object type="FUNCTION" selected="false" />
+        <object type="PACKAGE" selected="false" />
+        <object type="TYPE" selected="false" />
+        <object type="DIMENSION" selected="false" />
+        <object type="CLUSTER" selected="false" />
+      </public-schema>
+      <any-schema>
+        <object type="TABLE" selected="true" />
+        <object type="INDEX" selected="true" />
+        <object type="VIEW" selected="true" />
+        <object type="SYNONYM" selected="true" />
+        <object type="SEQUENCE" selected="true" />
+        <object type="PROCEDURE" selected="true" />
+        <object type="FUNCTION" selected="true" />
+        <object type="PACKAGE" selected="true" />
+        <object type="TYPE" selected="true" />
+        <object type="DIMENSION" selected="true" />
+        <object type="CLUSTER" selected="true" />
+      </any-schema>
+    </basic-setup>
+    <smart-setup>
+      <schemas type="SCHEMA" selected="true" />
+      <users type="USER" selected="true" />
+      <build-in-functions type="FUNCTION" selected="true" />
+      <user-schema>
+        <object type="TABLE" selected="true" />
+        <object type="INDEX" selected="true" />
+        <object type="VIEW" selected="true" />
+        <object type="SYNONYM" selected="true" />
+        <object type="SEQUENCE" selected="true" />
+        <object type="PROCEDURE" selected="true" />
+        <object type="FUNCTION" selected="true" />
+        <object type="PACKAGE" selected="true" />
+        <object type="TYPE" selected="true" />
+        <object type="DIMENSION" selected="true" />
+        <object type="CLUSTER" selected="true" />
+      </user-schema>
+      <public-schema>
+        <object type="TABLE" selected="true" />
+        <object type="INDEX" selected="true" />
+        <object type="VIEW" selected="true" />
+        <object type="SYNONYM" selected="true" />
+        <object type="SEQUENCE" selected="true" />
+        <object type="PROCEDURE" selected="true" />
+        <object type="FUNCTION" selected="true" />
+        <object type="PACKAGE" selected="true" />
+        <object type="TYPE" selected="true" />
+        <object type="DIMENSION" selected="true" />
+        <object type="CLUSTER" selected="true" />
+      </public-schema>
+      <any-schema>
+        <object type="TABLE" selected="true" />
+        <object type="INDEX" selected="true" />
+        <object type="VIEW" selected="true" />
+        <object type="SYNONYM" selected="true" />
+        <object type="SEQUENCE" selected="true" />
+        <object type="PROCEDURE" selected="true" />
+        <object type="FUNCTION" selected="true" />
+        <object type="PACKAGE" selected="true" />
+        <object type="TYPE" selected="true" />
+        <object type="DIMENSION" selected="true" />
+        <object type="CLUSTER" selected="true" />
+      </any-schema>
+    </smart-setup>
+  </component>
+  <component name="DBNavigator.Project.ConnectionManager">
+    <connections />
+  </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="false" />
   </component>
   <component name="DependenciesAnalyzeManager">
     <option name="myForwardDirection" value="false" />
@@ -258,7 +355,7 @@
       <module fileurl="file://$PROJECT_DIR$/google-translate-idea-plugin.iml" filepath="$PROJECT_DIR$/google-translate-idea-plugin.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA 7549" project-jdk-type="IDEA JDK">
+  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA 7584" project-jdk-type="IDEA JDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="RUBY_DOC_SETTINGS">
