@@ -20,9 +20,6 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.iws" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-translate-idea-plugin.iml" afterPath="$PROJECT_DIR$/google-translate-idea-plugin.iml" />
     </list>
     <ignored path="google-translate-idea-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,7 +170,7 @@
       <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="210" selection-start="2538" selection-end="2538" vertical-scroll-proportion="0.41227126">
+            <state line="77" column="11" selection-start="2621" selection-end="2621" vertical-scroll-proportion="0.41227126">
               <folding />
             </state>
           </provider>
@@ -962,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="210" selection-start="2538" selection-end="2538" vertical-scroll-proportion="0.41227126">
+        <state line="77" column="11" selection-start="2621" selection-end="2621" vertical-scroll-proportion="0.41227126">
           <folding />
         </state>
       </provider>

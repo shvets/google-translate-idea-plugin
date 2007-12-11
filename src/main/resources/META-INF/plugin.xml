@@ -4,7 +4,7 @@
   <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version></version>
+  <version>1.0.7</version>
   <idea-version min="2000"/>
 
   <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
