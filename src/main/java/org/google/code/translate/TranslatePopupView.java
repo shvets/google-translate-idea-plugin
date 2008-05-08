@@ -26,7 +26,10 @@ public class TranslatePopupView {
     try {
       TranslateHelper translateHelper = new TranslateHelper();
 
-      String translatedText = translateHelper.translate(searchText, TranslateHelper.getLangPair(project));
+      TranslateConfiguration configuration = project.getComponent(TranslateConfiguration.class);
+
+      String translatedText = translateHelper.translate(searchText,
+          configuration.getFromLanguage(), configuration.getToLanguage());
   /*
       Messages.showMessageDialog(
           translatedText,

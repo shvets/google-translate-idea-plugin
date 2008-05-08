@@ -5,7 +5,7 @@
 
   <groupId>org.google.code</groupId>
   <artifactId>google-translate-idea-plugin</artifactId>
-  <version>1.0.7</version>
+  <version>1.0.8</version>
   <packaging>jar</packaging>
 
   <name>google-translate-idea-plugin</name>

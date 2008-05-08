@@ -46,11 +46,16 @@ public class TranslateAction extends EditorAction {
       try {
         Project project = DataKeys.PROJECT.getData(dataContext);
 
-        String response = translateHelper.translate(selectedText, TranslateHelper.getLangPair(project));
+        if(project != null) {
+          TranslateConfiguration configuration = project.getComponent(TranslateConfiguration.class);
 
-        EditorModificationUtil.deleteSelectedText(editor);
+          String translatedText = translateHelper.translate(selectedText,
+            configuration.getFromLanguage(), configuration.getToLanguage());
 
-        EditorModificationUtil.insertStringAtCaret(editor, response);
+          EditorModificationUtil.deleteSelectedText(editor);
+
+          EditorModificationUtil.insertStringAtCaret(editor, translatedText);
+        }
       }
       catch (Exception e) {
         logger.error(e.getMessage());

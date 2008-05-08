@@ -1,7 +1,6 @@
 package org.google.code.translate;
 
 import com.intellij.openapi.application.ApplicationManager;
-import com.intellij.openapi.project.Project;
 import com.intellij.util.net.HttpConfigurable;
 
 import java.io.ByteArrayOutputStream;
@@ -20,13 +19,16 @@ import java.util.List;
  * @version 1.0 04/07/2007
  */
 public class TranslateHelper {
-  private static String hostURL = "http://code.google.com";
-  private static String START_SEQ_L2R = "<div id=result_box dir=ltr>";
-  private static String START_SEQ_R2L = "<div id=result_box dir=rtl>";
+  private static String TRANSLATE_HOST_URL = "http://translate.google.com";
+  private static String RESULT_START_SEQUENCE = "<div id=result_box dir=";
+  private static String RESULT_END_SEQ = "</div";
 
+  private static String LANGUAGE_FROM_START_SEQUENCE = "<select name=sl id=old_sl";
+  private static String LANGUAGE_TO_START_SEQUENCE = "<select name=tl id=old_tl";
+  private static String LANGUAGE_END_SEQUENCE = "</select>";
 
-  private static List<KeyValuePair> pairs = new ArrayList<KeyValuePair>();
-
+  private static List<KeyValuePair> fromLanguage = new ArrayList<KeyValuePair>();
+  private static List<KeyValuePair> toLanguage = new ArrayList<KeyValuePair>();
   /**
    * Creates new translate helper.
    *
@@ -36,6 +38,9 @@ public class TranslateHelper {
     HttpConfigurable httpConfigurable = (HttpConfigurable)
         ApplicationManager.getApplication().getComponent("HttpConfigurable");
 
+    if (httpConfigurable == null) {
+      httpConfigurable = HttpConfigurable.getInstance();
+    }
     if (httpConfigurable != null) {
       if (httpConfigurable.USE_HTTP_PROXY) {
         System.getProperties().put("proxySet", Boolean.valueOf(httpConfigurable.USE_HTTP_PROXY).toString());
@@ -48,20 +53,13 @@ public class TranslateHelper {
       }
     }
 
-    if (pairs.size() == 0) {
+    if (fromLanguage.size() == 0 || toLanguage.size() == 0) {
       prepareLangPairs();
     }
   }
 
   private void prepareLangPairs() throws Exception {
-    String start = "<select name=langpair>";
-    String end = "</select>";
-
-    String url = hostURL + "/translate_t?langpair=en|ru&text=test";
-
-    URLConnection urlConnection = prepareURLConnection(url);
-
-    String result = "";
+    URLConnection urlConnection = prepareURLConnection(TRANSLATE_HOST_URL);
 
     InputStream is = urlConnection.getInputStream();
 
@@ -82,10 +80,17 @@ public class TranslateHelper {
 
     String s = new String(baos.toByteArray(), "UTF-8");
 
-    int index = s.indexOf(start);
+    processlanguage(LANGUAGE_FROM_START_SEQUENCE, LANGUAGE_END_SEQUENCE, s, fromLanguage);
+    processlanguage(LANGUAGE_TO_START_SEQUENCE, LANGUAGE_END_SEQUENCE, s, toLanguage);
+  }
+
+  private void processlanguage(String start1, String end, String s, List<KeyValuePair> language) {
+    String result = "";
+
+    int index = s.indexOf(start1);
 
     if (index != -1) {
-      String s2 = s.substring(index + start.length());
+      String s2 = s.substring(index + start1.length());
 
       int index2 = s2.indexOf(end);
 
@@ -98,8 +103,8 @@ public class TranslateHelper {
       result = result.trim();
     }
 
-    String str1 = "<option value=";
-    String str2 = "</option>";
+    String str2 = "value=";
+    String str3 = "</option>";
 
     boolean ok = false;
 
@@ -107,20 +112,20 @@ public class TranslateHelper {
       if (result == null || result.trim().length() == 0) {
         ok = true;
       } else {
-        int index1 = result.indexOf(str1);
         int index2 = result.indexOf(str2);
+        int index3 = result.indexOf(str3);
 
-        String s2 = result.substring(index1 + str1.length(), index2);
+        String s2 = result.substring(index2+str2.length(), index3);
 
-        int index3 = s2.substring(1).indexOf("\"");
-        int index4 = s2.indexOf(">");
+        int index4 = s2.substring(1).indexOf("\"");
+        int index5 = s2.indexOf(">");
 
-        String key = s2.substring(1, index3 + 1);
-        String value = s2.substring(index4 + 1);
+        String key = s2.substring(1, index4 + 1);
+        String value = s2.substring(index5 + 1);
 
-        pairs.add(new KeyValuePair(key, value));
+        language.add(new KeyValuePair(key, value));
 
-        result = result.substring(index2 + str2.length());
+        result = result.substring(index3 + str3.length());
       }
     }
   }
@@ -150,16 +155,18 @@ public class TranslateHelper {
     return urlConnection;
   }
 
-  public List getLangPairs() {
-    return pairs;
+  public List<KeyValuePair> getFromLanguage() {
+    return fromLanguage;
   }
 
-  public String translate(String request, String langPair) throws Exception {
-    String end = "</div>";
+  public List<KeyValuePair> getToLanguage() {
+    return toLanguage;
+  }
 
+  public String translate(String request, String fromLanguage, String toLanguage) throws Exception {
     request = preProcess(request);
 
-    String url = hostURL + "/translate_t" + "?" + "langpair=" + langPair +
+    String url = TRANSLATE_HOST_URL + "/translate_t" + "?" + "langpair=" + fromLanguage + "|" + toLanguage +
         "&text=" + request;
 
     TranslateHelper translateHelper = new TranslateHelper();
@@ -187,23 +194,16 @@ public class TranslateHelper {
 
     String s = new String(baos.toByteArray(), "UTF-8");
 
-    String start = START_SEQ_L2R;
-
-    int index1 = s.indexOf(start);
-
-    if (index1 == -1) {
-      start = START_SEQ_R2L;
-      
-      index1 = s.indexOf(start);
-    }
+    int index1 = s.indexOf(RESULT_START_SEQUENCE);
 
     if (index1 != -1) {
-      String s2 = s.substring(index1 + start.length());
+      String s2 = s.substring(index1 + RESULT_START_SEQUENCE.length());
 
-      int index2 = s2.indexOf(end);
+      int index2 = s2.indexOf(RESULT_END_SEQ);
 
       if (index2 != -1) {
-        result = s2.substring(0, index2);
+        int index3 = s2.indexOf(">");
+        result = s2.substring(index3+1, index2);
       }
     }
 
@@ -231,18 +231,6 @@ public class TranslateHelper {
     text = text.replaceAll("\\Q&quot;\\E", "\"");
 
     return text;
-  }
-
-  public static String getLangPair(Project project) {
-    String langPair = "en|en";
-
-    if (project != null) {
-      TranslateConfiguration configuration = project.getComponent(TranslateConfiguration.class);
-
-      langPair = configuration.getLangPair();
-    }
-
-    return langPair;
   }
 
 }

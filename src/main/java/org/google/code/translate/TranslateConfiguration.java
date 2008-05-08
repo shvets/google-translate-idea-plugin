@@ -35,16 +35,24 @@ public final class TranslateConfiguration
 
   private TranslateConfigurationForm form;
 
-  private String langPair = "en|ru";
+  private String fromLanguage = "en";
+  private String toLanguage = "ru";
 
-  public String getLangPair() {
-    return langPair;
+  public String getFromLanguage() {
+    return fromLanguage;
   }
 
-  public void setLangPair(final String langPair) {
-    this.langPair = langPair;
+  public void setFromLanguage(final String fromLanguage) {
+    this.fromLanguage = fromLanguage;
   }
 
+  public String getToLanguage() {
+    return toLanguage;
+  }
+
+  public void setToLanguage(final String toLanguage) {
+    this.toLanguage = toLanguage;
+  }
   public boolean isModified() {
     return form != null && form.isModified(this);
   }
