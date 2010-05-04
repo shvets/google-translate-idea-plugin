@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.awt.*;
 
-
 /**
  * This class represents form object for propagating changes in the configuration.
  *
@@ -15,8 +14,6 @@ import java.awt.*;
 public class TranslateConfigurationForm {
   private JPanel rootComponent;
 
-  private JLabel label = new JLabel("Select translation:");
-
   private JComboBox fromComboBox = new JComboBox();
   private JComboBox toComboBox = new JComboBox();
 
@@ -25,6 +22,8 @@ public class TranslateConfigurationForm {
 
     rootComponent.setLayout(new FlowLayout());
 
+    JLabel label = new JLabel("Select translation:");
+    
     rootComponent.add(label);
     rootComponent.add(fromComboBox);
     rootComponent.add(toComboBox);

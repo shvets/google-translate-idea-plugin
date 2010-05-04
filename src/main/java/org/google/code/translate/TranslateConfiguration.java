@@ -20,7 +20,7 @@ import javax.swing.*;
     storages = {@Storage(id = "translate", file = "$PROJECT_FILE$")}
 )
 public final class TranslateConfiguration
-    implements ProjectComponent, Configurable, PersistentStateComponent<TranslateConfiguration> {
+    implements com.intellij.openapi.components.ProjectComponent, Configurable, PersistentStateComponent<TranslateConfiguration> {
   public static final String COMPONENT_NAME = "Translate.Configuration";
 //  private final ImageIcon CONFIG_ICON =
 //          helper.getIcon("resources/icon.png", getClass());

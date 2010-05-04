@@ -1,12 +1,16 @@
-<profiles>
-  <profile>
-    <id>dev</id>
-    <properties>
-      <idea.version>7821</idea.version>
-      <idea.home>C:/Work/Editors/IntelliJ IDEA 7821</idea.home>
-   </properties>
-    <activation>
-      <activeByDefault>true</activeByDefault>
-    </activation>
-  </profile>
-</profiles>
+<profilesXml>
+  <profiles>
+    <profile>
+      <id>dev</id>
+      <properties>
+        <idea.version>9.0.2</idea.version>
+        <idea.home>/Users/oshvets/ideaIU-9.0.2-jdk15</idea.home>
+        <!--/Users/oshvets/Library/Application Support/IntelliJIdea90CE/-->
+        <!--~/Library/Logs/IntelliJIdea90CE/-->
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
+</profilesXml>

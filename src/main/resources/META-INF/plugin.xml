@@ -4,8 +4,8 @@
   <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version>1.0.8</version>
-    <idea-version min="7656" since-build="7656"/>
+  <version>1.0.9</version>
+    <idea-version min="9000" since-build="9000"/>
 
   <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
 
@@ -32,6 +32,16 @@
     Changes:
 
       <ul>
+        <li>1.0.9
+          <ol>
+            <li>Adjusting changes in Google translate service for countries list.</li>
+          </ol>
+
+          <ol>
+            <li>Migrating to IDEA 9.</li>
+          </ol>
+        </li>
+
         <li>1.0.8
           <ol>
             <li>Adjusting changes in IDEA how it works now with proxies.</li>

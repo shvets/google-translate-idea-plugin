@@ -1,6 +1,7 @@
 package org.google.code.translate;
 
 import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.util.net.HttpConfigurable;
 
 import java.io.ByteArrayOutputStream;
@@ -20,11 +21,11 @@ import java.util.List;
  */
 public class TranslateHelper {
   private static String TRANSLATE_HOST_URL = "http://translate.google.com";
-  private static String RESULT_START_SEQUENCE = "<div id=result_box dir=";
-  private static String RESULT_END_SEQ = "</div";
+  private static String RESULT_START_SEQUENCE = "<span id=result_box class=\"short_text\"><span title";
+  private static String RESULT_END_SEQ = "</span></span";
 
-  private static String LANGUAGE_FROM_START_SEQUENCE = "<select name=sl id=old_sl";
-  private static String LANGUAGE_TO_START_SEQUENCE = "<select name=tl id=old_tl";
+  private static String LANGUAGE_FROM_START_SEQUENCE = "<select class=sllangdropdown name=sl id=\"old_sl\"";
+  private static String LANGUAGE_TO_START_SEQUENCE = "<select class=tllangdropdown name=tl id=\"old_tl\"";
   private static String LANGUAGE_END_SEQUENCE = "</select>";
 
   private static List<KeyValuePair> fromLanguage = new ArrayList<KeyValuePair>();
@@ -206,7 +207,7 @@ public class TranslateHelper {
         result = s2.substring(index3+1, index2);
       }
     }
-
+    
     if (result != null) {
       return postProcess(result);
     }

@@ -5,7 +5,7 @@
 
   <groupId>org.google.code</groupId>
   <artifactId>google-translate-idea-plugin</artifactId>
-  <version>1.0.8</version>
+  <version>1.0.9</version>
   <packaging>jar</packaging>
 
   <name>google-translate-idea-plugin</name>
@@ -57,6 +57,14 @@
       <systemPath>${idea.home}/lib/openapi.jar</systemPath>
     </dependency>
 
+    <dependency>
+      <groupId>com.intellij.idea</groupId>
+      <artifactId>util</artifactId>
+      <version>${idea.version}</version>
+      <scope>system</scope>
+      <systemPath>${idea.home}/lib/util.jar</systemPath>
+    </dependency>
+    
     <dependency>
       <groupId>com.intellij.idea</groupId>
       <artifactId>annotations</artifactId>
@@ -124,7 +132,7 @@
   <distributionManagement>
     <site>
       <id> Web site</id>
-      <url>http://code.google.com/p/google-translate-idea-plugin</url>
+      <url>http://github.com/shvets/google-translate-idea-plugin</url>
     </site>
   </distributionManagement>
 
