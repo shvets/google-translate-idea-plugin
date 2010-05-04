@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CCaseConfig">
+    <option name="checkoutReserved" value="false" />
+    <option name="markExternalChangeAsUpToDate" value="true" />
+    <option name="checkInUseHijack" value="true" />
+    <option name="useUcmModel" value="true" />
+    <option name="synchOutside" value="false" />
+    <option name="isHistoryResticted" value="true" />
+    <option name="useIdenticalSwitch" value="true" />
+    <option name="synchActivitiesOnRefresh" value="true" />
+    <option name="lastScr" value="" />
+    <option name="scrTextFileName" value="" />
+    <option name="historyRevisionsNumber" value="4" />
+  </component>
+  <component name="CloverPlugin" class="com.cenqua.clover.idea.config.IdeaCloverConfig">
+    <regexpContexts class="java.util.ArrayList" />
+    <buildWithClover>true</buildWithClover>
+    <highlightCovered>true</highlightCovered>
+    <excludes null="true" />
+    <periodicRefresh>false</periodicRefresh>
+    <showErrorMarks>true</showErrorMarks>
+    <calculateTestCoverage>true</calculateTestCoverage>
+    <showInline>true</showInline>
+    <includePassedTestCoverageOnly>true</includePassedTestCoverageOnly>
+    <notCoveredStripe>-65536</notCoveredStripe>
+    <failedCoveredHighlight>-3920</failedCoveredHighlight>
+    <autoViewInCloudReport>true</autoViewInCloudReport>
+    <alwaysCollapseTestClasses>false</alwaysCollapseTestClasses>
+    <loadPerTestData>true</loadPerTestData>
+    <manualInitString null="true" />
+    <testCaseLayout class="com.cenqua.clover.idea.config.TestCaseLayout">TEST_CASES</testCaseLayout>
+    <span>0</span>
+    <relativeInitString>false</relativeInitString>
+    <coveredStripe>-16711936</coveredStripe>
+    <modelScope class="com.cenqua.clover.idea.config.ModelScope">APP_CLASSES_ONLY</modelScope>
+    <cloudReportIncludeSubpkgs>false</cloudReportIncludeSubpkgs>
+    <alwaysExpandTestClasses>false</alwaysExpandTestClasses>
+    <flushInterval>5000</flushInterval>
+    <flattenPackages>false</flattenPackages>
+    <coveredHighlight>-3605816</coveredHighlight>
+    <autoRefreshInterval>2000</autoRefreshInterval>
+    <viewCoverage>true</viewCoverage>
+    <contextFilterSpec />
+    <languageLevel>1.3</languageLevel>
+    <showTooltips>true</showTooltips>
+    <notCoveredHighlight>-341816</notCoveredHighlight>
+    <enabled>false</enabled>
+    <outOfDateStripe>-256</outOfDateStripe>
+    <instrumentTests>true</instrumentTests>
+    <showGutter>true</showGutter>
+    <failedCoveredStripe>-14336</failedCoveredStripe>
+    <projectRebuild class="com.cenqua.clover.idea.config.ProjectRebuild">ASK</projectRebuild>
+    <hideFullyCovered>false</hideFullyCovered>
+    <includes null="true" />
+    <autoScroll>true</autoScroll>
+    <showSummaryInToolbar>true</showSummaryInToolbar>
+    <useGeneratedInitString>true</useGeneratedInitString>
+    <outOfDateHighlight>-32</outOfDateHighlight>
+    <showSummaryInToolwindow>true</showSummaryInToolwindow>
+    <testViewScope class="com.cenqua.clover.idea.config.TestViewScope">GLOBAL</testViewScope>
+    <flushPolicy>0</flushPolicy>
+    <lastProjectConfigTabSelected>0</lastProjectConfigTabSelected>
+    <filteredHighlight>-4144960</filteredHighlight>
+    <autoScrollFromSource>false</autoScrollFromSource>
+    <viewIncludeAnnotation>true</viewIncludeAnnotation>
+    <filteredStripe>-12566464</filteredStripe>
+    <autoRefresh>true</autoRefresh>
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="HudsonMonitorComponent">
+    <option name="timeOutTextField" value="30" />
+  </component>
+  <component name="IdProvider" IDEtalkID="6C0AC66499A44E9348CBDF52C14D8D7F" />
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="StarteamConfiguration">
+    <option name="SERVER" value="" />
+    <option name="PORT" value="49201" />
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="PROJECT" value="" />
+    <option name="VIEW" value="" />
+    <option name="ALTERNATIVE_WORKING_PATH" value="" />
+    <option name="LOCK_ON_CHECKOUT" value="false" />
+    <option name="UNLOCK_ON_CHECKIN" value="false" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="Translate.Configuration">
+    <option name="toLanguage" value="fr" />
+  </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+</project>
+

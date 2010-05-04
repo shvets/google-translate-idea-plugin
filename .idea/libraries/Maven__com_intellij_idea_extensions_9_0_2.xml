@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Maven: com.intellij.idea:extensions:9.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../ideaIU-9.0.2-jdk15/lib/extensions.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
