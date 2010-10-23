@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/google-translate-idea-plugun.iml" filepath="$PROJECT_DIR$/google-translate-idea-plugun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google-translate-idea-plugin.iml" filepath="$PROJECT_DIR$/google-translate-idea-plugin.iml" />
     </modules>
   </component>
 </project>

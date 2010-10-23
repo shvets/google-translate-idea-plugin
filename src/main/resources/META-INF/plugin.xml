@@ -1,11 +1,11 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
 
-<idea-plugin url="http://code.google.com/p/google-translate-idea-plugin">
+<idea-plugin version="2" url="http://code.google.com/p/google-translate-idea-plugin">
   <name>Google Translate</name>
 
   <description>This plugin performs translations in Editor window from one language to another. It uses translate.google.com service behind the scene.</description>
-  <version>1.0.9</version>
-    <idea-version min="9000" since-build="9000"/>
+  <version>1.1.0</version>
+  <idea-version min="9000" since-build="9000"/>
 
   <vendor url="http://scriptlandia.blogspot.com" email="shvets_alexander@yahoo.com">Alexander Shvets</vendor>
 
@@ -32,6 +32,12 @@
     Changes:
 
       <ul>
+        <li>1.1.0.
+          <ol>
+            <li>Adjusting changes in Google translate service for countries list and translation function.</li>
+          </ol>
+        </li>
+
         <li>1.0.9
           <ol>
             <li>Adjusting changes in Google translate service for countries list.</li>
@@ -88,6 +94,10 @@
       </ul>
   ]]></change-notes>
 
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
   <project-components>
     <component>
       <implementation-class>org.google.code.translate.TranslateConfiguration</implementation-class>
@@ -108,7 +118,7 @@
             text="Translation Preview" description="Translation Preview">
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="translate.Translate"/>
     </action>
-
+    
  <!--   <group id="translate.Translate.TranslateGroup" text="Translate" description="Translate">
       <reference id="translate.Translate"/>
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Generate"/>
@@ -117,5 +127,9 @@
     </group>
     -->
   </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
 
 </idea-plugin>

@@ -5,7 +5,7 @@
 
   <groupId>org.google.code</groupId>
   <artifactId>google-translate-idea-plugin</artifactId>
-  <version>1.0.9</version>
+  <version>1.1.0</version>
   <packaging>jar</packaging>
 
   <name>google-translate-idea-plugin</name>
@@ -41,7 +41,7 @@
       <id>shvets</id>
       <name>Alexander Shvets</name>
       <email>shvets_alexander@yahoo.com</email>
-      <organization></organization>
+      <organization>n/a</organization>
       <roles>
         <role>Founder</role>
       </roles>
